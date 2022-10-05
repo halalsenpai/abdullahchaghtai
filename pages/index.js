@@ -1,14 +1,3 @@
-import { useTheme } from "next-themes";
-import Head from "next/head";
-import Image from "next/image";
-import { MacTerminal } from "../components/MacTerminal";
-import Navbar from "../components/Navbar";
-import styles from "../styles/Home.module.css";
-import HeroSection from "../components/HeroSection";
-
-import "@fortawesome/fontawesome-free";
-import { SkillsSection } from "../components/SkillsSection";
-
 export default function Home() {
   return (
     <div>
@@ -20,8 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <SkillsSection /> */}
-
-      <main className={styles.main}></main>
+      <main className="">Testing</main>
     </div>
   );
 }
