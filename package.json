@@ -9,20 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@fortawesome/fontawesome-free": "^6.2.0",
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@headlessui/react": "^1.5.0",
-    "@heroicons/react": "^1.0.5",
-    "@lottiefiles/react-lottie-player": "^3.4.4",
-    "@mui/material": "^5.10.8",
     "next": "12.1.0",
-    "next-themes": "^0.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
