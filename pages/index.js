@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import HeroSection from "../components/HeroSection";
 
 import "@fortawesome/fontawesome-free";
+import { SkillsSection } from "../components/SkillsSection";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroSection />
+      <SkillsSection />
 
       <main className={styles.main}></main>
     </div>
