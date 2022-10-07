@@ -1,13 +1,12 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    screens: {},
-    extend: {},
+    extend: {
+      fontFamily: {
+        calibre: ["Calibre", "sans-serif"],
+        courier: ["Courier", "monospace"],
+      },
+    },
   },
-  darkMode: "class",
   plugins: [],
 };

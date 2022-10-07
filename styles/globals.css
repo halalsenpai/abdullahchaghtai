@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: Calibre, system-ui, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("../public/static/fonts/CalibreMedium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../public/static/fonts/CalibreSemibold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Calibre";
+  src: url("../public/static/fonts/CalibreRegular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "'sf mono'";
+  src: url("../public/static/fonts/SFMono-Regular.otf");
+}
+
 @layer components {
   .flex-center {
     @apply flex items-center justify-center;
@@ -13,4 +39,3 @@
     min-height: 2.5rem;
   }
 }
-

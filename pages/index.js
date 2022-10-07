@@ -1,7 +1,11 @@
+import { Herosection } from "../components/Herosection";
+
 export default function Home() {
   return (
     <div>
-      <main className="">Testing</main>
+      <main className="">
+        <Herosection />
+      </main>
     </div>
   );
 }
