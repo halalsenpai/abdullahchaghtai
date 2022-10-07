@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <div>
       <main className="">
-        <Herosection />
+        <div className="sm:h-screen sm:flex sm:justify-center sm:items-center sm:min-h-[500px]">
+          <Herosection />
+        </div>
       </main>
     </div>
   );
