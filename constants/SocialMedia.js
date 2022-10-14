@@ -1,20 +1,19 @@
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Linkedin, GitHub, Mail } from "react-feather";
 
 export const socialMediaLinks = [
   {
     name: "github",
-    icon: faGithub,
+    icon: <GitHub size="20px" />,
     link: "https://github.com/halalsenpai",
   },
   {
     name: "linkedin",
-    icon: faLinkedin,
+    icon: <Linkedin size="20px" />,
     link: "https://www.linkedin.com/in/halalsenpai/",
   },
   {
     name: "email",
-    icon: faEnvelope,
-    link: "https://github.com/halalsenpai",
+    icon: <Mail size="20px" />,
+    link: "mailto:devchaghtai@gmail.com.com?subject=Mail from halalsenpai.com",
   },
 ];

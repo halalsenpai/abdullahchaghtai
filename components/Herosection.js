@@ -22,7 +22,7 @@ export const Herosection = () => {
   }
 
   return (
-    <div className="container mx-auto flex flex-col-reverse sm:flex-row 2xl:justify-center xl:justify-center select-none">
+    <div className="container md:px-[72px] md:max-w-[860px] lg:max-w-[unset] flex flex-col-reverse sm:flex-row 2xl:justify-center xl:justify-center select-none">
       <div className="flex flex-col">
         <h5 className="mb-6 font-courier font-semibold text-lg text-blue-800 dark:text-[#64ffda]">Hi, my name is</h5>
         <h3 className="text-6xl font-calibre font-bold">Abdullah Chaghtai.</h3>
@@ -37,7 +37,7 @@ export const Herosection = () => {
         <p>currently open to frontend roles</p>
       </div>
       <div className="flex justify-center">
-        <div className="w-full max-w-[300px] h-full">
+        <div className="w-full max-w-[300px] h-full flex items-center">
           <Image src={AvatarImage} height={500} width={500} />
         </div>
       </div>
