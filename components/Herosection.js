@@ -38,7 +38,7 @@ export const Herosection = () => {
       </div>
       <div className="flex justify-center">
         <div className="w-full max-w-[300px] h-full flex items-center">
-          <Image src={AvatarImage} height={500} width={500} />
+          <Image alt="" src={AvatarImage} height={500} width={500} />
         </div>
       </div>
     </div>
