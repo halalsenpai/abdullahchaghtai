@@ -39,3 +39,7 @@
     min-height: 2.5rem;
   }
 }
+
+.list-reset ul {
+  list-style: disc;
+}

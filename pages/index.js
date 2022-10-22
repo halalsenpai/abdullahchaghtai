@@ -5,9 +5,9 @@ import { AboutSection } from "../components/AboutSection";
 import { Experience } from "../components/Experience";
 import { Herosection } from "../components/Herosection";
 import { SocialMediaLinks } from "../components/SocialMediaLinks";
+import { sortByDate } from "../utils";
 
 export default function Home({ jobs }) {
-  console.log("files", jobs);
   return (
     <main className="dark:bg-[#0a192f] h-fit min-h-screen">
       <SocialMediaLinks />
@@ -18,7 +18,7 @@ export default function Home({ jobs }) {
         <AboutSection />
       </div>
       <div className="mx-auto px-[10px] sm:px-[72px] max-w-[900px] py-[100px]">
-        <Experience />
+        <Experience jobs={jobs} />
       </div>
     </main>
   );
@@ -29,9 +29,11 @@ export async function getStaticProps() {
   console.log("something", files);
 
   const jobs = files.map((filename) => {
+    const slug = filename.replace(".md", "");
     const markDownWithMeta = fs.readFileSync(path.join("content/jobs", filename), "utf-8");
     const { data: frontmatter, content } = matter(markDownWithMeta);
     return {
+      slug,
       frontmatter,
       content,
     };
@@ -39,7 +41,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      jobs: jobs,
+      jobs: jobs.sort(sortByDate),
     },
   };
 }
