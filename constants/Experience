@@ -1,0 +1,13 @@
+export const data = [
+  {
+    label: "Optimyse",
+    value: "optimyse",
+    desc: { jobTitle: "Associate Software Engineer", company: "Optimyse",  },
+  },
+  {
+    label: "AlTafseer",
+    value: "altafseer",
+    desc: `Because it's about motivating the doers. Because I'm here
+      to follow my dreams and inspire other people to follow their dreams, too.`,
+  },
+];
