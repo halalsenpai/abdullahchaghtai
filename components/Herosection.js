@@ -22,7 +22,7 @@ export const Herosection = () => {
   }
 
   return (
-    <div className="container px-[25px] md:px-[72px] md:max-w-[860px] lg:max-w-[unset] flex flex-col-reverse sm:flex-row 2xl:justify-center xl:justify-center select-none">
+    <div className="container px-[20px] md:px-[72px] md:max-w-[860px] lg:max-w-[unset] flex flex-col-reverse sm:flex-row 2xl:justify-center xl:justify-center select-none">
       <div className="flex flex-col">
         <h5 className="mb-4 sm:mb-5 font-courier font-semibold text-base sm:text-lg text-blue-800 dark:text-yellow-400">Hi, my name is</h5>
         <h3 className="sm:text-6xl text-4xl font-calibre font-bold">Abdullah Chaghtai.</h3>

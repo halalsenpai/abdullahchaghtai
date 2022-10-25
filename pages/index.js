@@ -14,10 +14,10 @@ export default function Home({ jobs }) {
       <div className="h-screen flex justify-center items-center min-h-[500px]">
         <Herosection />
       </div>
-      <div className="mx-auto px-[10px] h-full sm:px-[72px] max-w-[900px] py-[100px]">
+      <div className="mx-auto px-[20px] h-full sm:px-[72px] max-w-[900px] pb-[60px]">
         <AboutSection />
       </div>
-      <div className="mx-auto px-[10px] sm:px-[72px] max-w-[900px] py-[100px]">
+      <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
         <Experience jobs={jobs} />
       </div>
     </main>

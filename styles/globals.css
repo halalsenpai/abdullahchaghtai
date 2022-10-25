@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: Calibre, system-ui, sans-serif;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
