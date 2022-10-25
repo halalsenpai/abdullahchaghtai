@@ -23,6 +23,7 @@ export const AboutSection = () => {
         <div className="group block relative">
           <Image alt="" className="z-[2] aspect-auto" layout="responsive" objectFit="cover" src={BioImage} />
           <div className="hidden sm:block top-0 duration-200 h-fit absolute transition ease-in delay-150 border-yellow-400 border-solid border-4 w-full translate-x-4 translate-y-4 z-[1] group-hover:-translate-x-0 group-hover:-translate-y-0 ">
+            {/* TODO - CSS this has got to be the most idiotic thing but it works for me, Ill revisit it later */}
             <Image alt="" className="!hidden" src={BioImage} />
           </div>
         </div>
