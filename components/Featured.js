@@ -48,8 +48,7 @@ export const Featured = () => {
                   </a>
                 </h3>
                 <p className="sm:bg-[hsl(216,65%,15%)] p-[10px] sm:p-[25px] rounded-sm shadow-xl  ">
-                  This portal allows job seekers and companies to connect directly, chat in real time, track of all applications sent or received, and other cutting-edge features
-                  to help you find the right fit.
+                  Find property opportunities that others miss. Our superior property search and data enhancement makes finding the next deal a breeze.
                 </p>
                 <ul className="flex text-gray-400 [&>*]:sm:ml-4 [&>*]:ml-2 justify-end mt-5">
                   <li>Reactjs</li>
