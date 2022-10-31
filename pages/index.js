@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import path from "path";
 import { AboutSection } from "../components/AboutSection";
 import { Experience } from "../components/Experience";
+import { Featured } from "../components/Featured";
 import { Herosection } from "../components/Herosection";
 import { SocialMediaLinks } from "../components/SocialMediaLinks";
 import { sortByDate } from "../utils";
@@ -19,6 +20,9 @@ export default function Home({ jobs }) {
       </div>
       <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
         <Experience jobs={jobs} />
+      </div>
+      <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
+        <Featured />
       </div>
     </main>
   );
