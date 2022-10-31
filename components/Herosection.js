@@ -18,7 +18,8 @@ export const Herosection = () => {
   function toggleDarkMode() {
     if (theme === "light") {
       setTheme("dark");
-    } else setTheme("light");
+      // hot fix only dark mode
+    } else setTheme("dark");
   }
 
   return (
