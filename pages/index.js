@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import { AboutSection } from "../components/AboutSection";
+import { Contact } from "../components/Contact";
 import { Experience } from "../components/Experience";
 import { Featured } from "../components/Featured";
 import { Herosection } from "../components/Herosection";
@@ -23,6 +24,9 @@ export default function Home({ jobs }) {
       </div>
       <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
         <Featured />
+      </div>
+      <div className="flex justify-center mx-auto px-[20px] h-fit min-h-screen sm:px-[72px] max-w-[900px] py-[60px]">
+        <Contact />
       </div>
     </main>
   );

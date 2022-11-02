@@ -29,11 +29,11 @@ export const Herosection = () => {
         <h3 className="sm:text-6xl text-4xl font-calibre font-bold">Abdullah Chaghtai.</h3>
         <h1 className="sm:text-6xl text-4xl font-calibre font-bold  dark:text-[#8892B0]">I like building things for the web.</h1>
         <p className="sm:text-2xl text-lg max-w-[550px]">
-          Im a software engineer specializing in building (and occasionally designing) awesome digital experiences and I may have a thing for{" "}
-          <strong className="cursor-pointer" onClick={toggleDarkMode}>
+          Im a software engineer specializing in building (and occasionally designing) awesome digital experiences and I may have an unhealthy obsession for mechanical keyboards
+          {/* <strong className="cursor-pointer" onClick={toggleDarkMode}>
             dark
-          </strong>{" "}
-          modes.
+          </strong>{" "} */}
+          {/* modes. */}
         </p>
         <p>open to frontend roles</p>
       </div>
