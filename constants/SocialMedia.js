@@ -9,7 +9,7 @@ export const socialMediaLinks = [
   {
     name: "linkedin",
     icon: <Linkedin size="20px" />,
-    link: "https://www.linkedin.com/in/abdullahchaghtai/",
+    link: "https://www.linkedin.com/in/halalsenpai/",
   },
   {
     name: "email",
