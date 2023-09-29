@@ -35,7 +35,7 @@ export const Herosection = () => {
           </strong>{" "} */}
           {/* modes. */}
         </p>
-        <p>open to frontend roles</p>
+        <p>open to engineering roles</p>
       </div>
       <div className="flex justify-center">
         <div className="hidden sm:flex mb-1 w-full max-w-[200px] md:max-w-[300px] h-full items-center">
