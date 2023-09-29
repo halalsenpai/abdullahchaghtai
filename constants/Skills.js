@@ -1,1 +1,1 @@
-export const Technologies = ["React", "Javasrcipt", "Typescript", "Node.js", "Nest.js", "Nextjs"];
+export const Technologies = ["Java","React", "Javasrcipt", "Typescript", "Node.js", "Nest.js", "Nextjs", "SQL"];

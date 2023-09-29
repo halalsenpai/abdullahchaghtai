@@ -9,9 +9,11 @@ export const AboutSection = () => {
       <h1 className="text-3xl dark:text-yellow-400 font-bold mb-2">About me</h1>
       <div className="flex flex-col sm:grid sm:grid-cols-[3fr,2fr] sm:gap-[50px]">
         <div className="text-lg leading-snug">
-          Hi, I‘m Abdullah, and I graduated from the University of Karachi in 2020 with a degree in Computer Science. My interests are in Front End Engineering, and I love to
-          create beautiful and performant products with delightful user experiences. My interest in web development began when I was trying to do a crypto assignment and kinda went
-          overkill with the frontend instead of making sure the ciphers came out right :)
+        I'm Abdullah, a Computer Science graduate with a versatile skillset that transcends programming languages. While I'm proficient in Java and JavaScript, my true strength lies in problem-solving and delivering effective solutions.
+
+In my current role within the health tech sector, I've honed my ability to tackle complex challenges head-on. Whether it's optimizing performance, architecting robust systems, or enhancing user experiences, I'm dedicated to finding innovative solutions.
+
+I believe in the power of technology to transform industries, and my approach is always centered on delivering tangible results. Let's connect to explore how I can apply my problem-solving skills to meet your specific objectives.
           <div className="mt-1">Here are a few technologies I have experiences with:</div>
           <ul className="grid grid-cols-2">
             {Technologies.map((skill, i) => (
