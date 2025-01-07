@@ -1,3 +1,18 @@
+/* Force dark mode */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  forced-color-adjust: none;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
