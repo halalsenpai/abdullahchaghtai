@@ -18,14 +18,7 @@ export const Layout = ({ children }) => {
       <main className="px-4 sm:px-8 max-w-6xl mx-auto">
         {children}
       </main>
-      <div className="fixed bottom-6 right-6">
-        <button
-          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-colors"
-        >
-          {theme === 'dark' ? '🌞' : '🌙'}
-        </button>
-      </div>
+
     </div>
   );
 }; 

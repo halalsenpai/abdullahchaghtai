@@ -1,88 +1,89 @@
-import { useState } from 'react';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Menu } from "react-feather";
+import { useState } from "react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' }
+  const links = [
+    { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800">
-      <div className="max-w-6xl mx-auto px-4 sm:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
+    <motion.header
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 right-0 z-50"
+    >
+      <div className="bg-gray-900/80 backdrop-blur-xl">
+        <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo/Name */}
             <Link href="/">
-              <a className="text-xl font-bold text-gray-900 dark:text-white">AC.</a>
+              <a className="text-xl font-bold text-gray-100 hover:text-amber-500 transition-colors">
+                Abdullah
+              </a>
             </Link>
-          </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden sm:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-400 
-                         transition-colors duration-200"
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex md:items-center md:space-x-8">
+              {links.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                >
+                  <Link href={link.href}>
+                    <a className="text-gray-400 hover:text-amber-500 transition-colors">
+                      {link.name}
+                    </a>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-400 hover:text-amber-500 transition-colors"
               >
-                {item.name}
-              </a>
-            ))}
-            <a
-              href="/Abdullah-Chaghtai.pdf"
-              target="_blank"
-              className="px-4 py-2 rounded-md border-2 border-yellow-400 text-yellow-500 
-                       hover:bg-yellow-400/10 transition-colors duration-200"
-            >
-              Resume
-            </a>
+                <Menu className="h-6 w-6" />
+              </button>
+            </div>
           </div>
+        </nav>
 
-          {/* Mobile Navigation Button */}
-          <button
-            className="sm:hidden flex items-center"
-            onClick={() => setIsOpen(!isOpen)}
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden bg-gray-900/80 backdrop-blur-xl"
           >
-            <span className="sr-only">Open menu</span>
-            {/* Hamburger icon */}
-            <svg
-              className="h-6 w-6 text-gray-600 dark:text-gray-300"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
-        </div>
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {links.map((link, i) => (
+                <Link key={link.name} href={link.href}>
+                  <a
+                    onClick={() => setIsOpen(false)}
+                    className="block px-3 py-2 text-gray-400 hover:text-amber-500 
+                             transition-colors rounded-md"
+                  >
+                    {link.name}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
       </div>
-
-      {/* Mobile Navigation Menu */}
-      {isOpen && (
-        <div className="sm:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block px-3 py-2 rounded-md text-gray-600 dark:text-gray-300 
-                         hover:text-yellow-500 dark:hover:text-yellow-400"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-    </nav>
+    </motion.header>
   );
 }; 

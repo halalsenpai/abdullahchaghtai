@@ -46,7 +46,7 @@ export const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <a
-                href="YOUR_CALENDLY_LINK_HERE"
+                href="https://calendly.com/bashalog-info/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium 
