@@ -7,6 +7,9 @@ module.exports = withMT({
         calibre: ["Calibre", "sans-serif"],
         courier: ["Courier", "monospace"],
       },
+      backdropBlur: {
+        xl: '20px',
+      },
     },
   },
   darkMode: "class",

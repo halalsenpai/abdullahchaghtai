@@ -1,34 +1,25 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-import { AboutSection } from "../components/AboutSection";
-import { Contact } from "../components/Contact";
+import { Layout } from "../components/Layout";
+import { Hero } from "../components/Hero";
+import { About } from "../components/About";
 import { Experience } from "../components/Experience";
-import { Featured } from "../components/Featured";
-import { Herosection } from "../components/Herosection";
-import { SocialMediaLinks } from "../components/SocialMediaLinks";
+import { Projects } from "../components/Projects";
+import { Contact } from "../components/Contact";
 import { sortByDate } from "../utils";
+import { Skills } from "../components/Skills";
 
 export default function Home({ jobs }) {
   return (
-    <main className="dark:bg-[#0a192f] h-fit min-h-screen">
-      <SocialMediaLinks />
-      <div className="h-screen flex justify-center items-center min-h-[500px]">
-        <Herosection />
-      </div>
-      <div className="mx-auto px-[20px] h-full sm:px-[72px] max-w-[900px] pb-[60px]">
-        <AboutSection />
-      </div>
-      <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
-        <Experience jobs={jobs} />
-      </div>
-      <div className="mx-auto px-[20px] sm:px-[72px] max-w-[900px] py-[60px]">
-        <Featured />
-      </div>
-      <div className="flex justify-center mx-auto px-[20px] h-fit min-h-screen sm:px-[72px] max-w-[900px] py-[60px]">
-        <Contact />
-      </div>
-    </main>
+    <Layout>
+      <Hero />
+      <About />
+      <Skills />
+      <Experience jobs={jobs} />
+      <Projects />
+      <Contact />
+    </Layout>
   );
 }
 
