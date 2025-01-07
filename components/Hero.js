@@ -59,8 +59,7 @@ export const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-medium 
-                         text-white bg-gradient-to-r from-amber-600 to-yellow-600 
-                         dark:from-amber-500 dark:to-yellow-600
+                         text-white bg-gradient-to-r from-amber-500 to-yellow-600
                          rounded-lg shadow-lg hover:shadow-amber-500/20 
                          hover:shadow-2xl transition-all duration-200 group"
               >
@@ -73,12 +72,9 @@ export const Hero = () => {
               <a
                 href="#projects"
                 className="inline-flex items-center justify-center px-6 py-3 text-base 
-                         font-medium text-gray-900 dark:text-gray-100 
-                         bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl
-                         rounded-lg shadow-lg hover:shadow-xl 
-                         hover:bg-white dark:hover:bg-gray-800
-                         transition-all duration-200
-                         border border-gray-200/50 dark:border-gray-700/50"
+                         font-medium text-gray-100 bg-gray-800/80 backdrop-blur-xl
+                         rounded-lg shadow-lg hover:shadow-xl hover:bg-gray-800
+                         transition-all duration-200 border border-gray-700/50"
               >
                 View Projects
               </a>
@@ -90,24 +86,25 @@ export const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.45 }}
               className="inline-flex items-center gap-2 px-4 py-2 
-                         bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl
-                         rounded-full border border-gray-200/50 dark:border-gray-700/50"
+                       bg-gray-800/80 backdrop-blur-xl rounded-full 
+                       border border-gray-700/50"
             >
-              <span className="text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-sm text-gray-400">
                 Co-founder & Technical Lead @
               </span>
               <a
                 href="https://bashalog.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-900 dark:text-gray-100 
-                          hover:text-amber-600 dark:hover:text-amber-500 transition-colors"
+                className="inline-flex items-center gap-2 text-gray-100 
+                         hover:text-amber-500 transition-colors"
               >
                 <span className="font-semibold">Bashalog</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
 
+            {/* Social Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -118,8 +115,9 @@ export const Hero = () => {
                 href="https://github.com/halalsenpai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-gray-800/50 text-gray-400 hover:text-amber-500 
-                         hover:bg-gray-800 transition-all duration-300"
+                className="p-2 rounded-full bg-gray-800/50 text-gray-400 
+                         hover:text-amber-500 hover:bg-gray-800 
+                         transition-all duration-300"
                 aria-label="GitHub Profile"
               >
                 <GitHub className="w-5 h-5" />
@@ -128,8 +126,9 @@ export const Hero = () => {
                 href="https://www.linkedin.com/in/halalsenpai"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full bg-gray-800/50 text-gray-400 hover:text-amber-500 
-                         hover:bg-gray-800 transition-all duration-300"
+                className="p-2 rounded-full bg-gray-800/50 text-gray-400 
+                         hover:text-amber-500 hover:bg-gray-800 
+                         transition-all duration-300"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin className="w-5 h-5" />
@@ -152,14 +151,13 @@ export const Hero = () => {
             ].map((stat, idx) => (
               <div 
                 key={idx}
-                className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-lg p-4
-                         shadow-lg dark:shadow-gray-900/50 text-center
-                         border border-gray-200/50 dark:border-gray-700/50"
+                className="bg-gray-800/80 backdrop-blur-xl rounded-lg p-4
+                         shadow-lg text-center border border-gray-700/50"
               >
-                <div className="text-2xl font-bold text-amber-600 dark:text-amber-500">
+                <div className="text-2xl font-bold text-amber-500">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">{stat.label}</div>
+                <div className="text-sm text-gray-400">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -174,10 +172,10 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-6 h-10 rounded-full border-2 border-gray-300 dark:border-gray-700 
+              className="w-6 h-10 rounded-full border-2 border-gray-700 
                        flex items-start justify-center p-2"
             >
-              <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700" />
+              <div className="w-1.5 h-1.5 rounded-full bg-gray-700" />
             </motion.div>
           </motion.div>
         </motion.div>
