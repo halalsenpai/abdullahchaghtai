@@ -19,7 +19,7 @@ export const SEO = ({
         "telephone": "+92 333 2123384",
         "sameAs": [
           "https://github.com/halalsenpai",
-          "https://linkedin.com/in/halalsenpai",
+          "https://www.linkedin.com/in/halalsenpai",
           "https://bashalog.com"
         ],
         "jobTitle": "Full Stack Engineer & Technical Lead",

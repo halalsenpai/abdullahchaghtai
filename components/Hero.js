@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar } from "react-feather";
+import { ArrowRight, Calendar, GitHub, Linkedin } from "react-feather";
 
 export const Hero = () => {
   return (
@@ -105,6 +105,34 @@ export const Hero = () => {
               >
                 <span className="font-semibold">Bashalog</span>
                 <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="flex items-center gap-4"
+            >
+              <a
+                href="https://github.com/halalsenpai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-gray-800/50 text-gray-400 hover:text-amber-500 
+                         hover:bg-gray-800 transition-all duration-300"
+                aria-label="GitHub Profile"
+              >
+                <GitHub className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/halalsenpai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-gray-800/50 text-gray-400 hover:text-amber-500 
+                         hover:bg-gray-800 transition-all duration-300"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="w-5 h-5" />
               </a>
             </motion.div>
           </div>
