@@ -8,18 +8,18 @@
   }
 
   body {
-    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+    @apply bg-gray-900 text-gray-100;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
   
   ::selection {
-    @apply bg-yellow-400/30 text-yellow-400;
+    @apply bg-amber-500/30 text-amber-500;
   }
 }
 
 @layer components {
   .section-heading {
-    @apply text-2xl font-bold text-yellow-500 dark:text-yellow-400 mb-8;
+    @apply text-2xl font-bold text-amber-500 mb-8;
   }
   
   .section-container {
@@ -29,25 +29,21 @@
   .link-underline {
     @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] 
            after:w-full after:origin-bottom-right after:scale-x-0 
-           after:bg-yellow-400 after:transition-transform after:duration-300 
+           after:bg-amber-500 after:transition-transform after:duration-300 
            hover:after:origin-bottom-left hover:after:scale-x-100;
   }
 }
 
 @layer utilities {
   .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   .scrollbar-hide::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari and Opera */
+    display: none;
   }
   .skill-glow {
     filter: drop-shadow(0 0 0.5rem var(--skill-color));
-  }
-  
-  .dark .skill-glow {
-    filter: drop-shadow(0 0 0.5rem var(--skill-dark-color));
   }
 }
 
