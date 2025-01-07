@@ -9,10 +9,12 @@ import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { sortByDate } from "../utils";
 import { Skills } from "../components/Skills";
+import { SEO } from "../components/SEO";
 
 export default function Home({ jobs }) {
   return (
     <Layout>
+      <SEO />
       <Hero />
       <About />
       <Skills />

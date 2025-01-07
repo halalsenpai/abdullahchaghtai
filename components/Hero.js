@@ -18,23 +18,32 @@ export const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-100"
+                className="text-4xl md:text-6xl font-bold text-gray-100"
               >
-                Transforming Ideas into
+                <span className="block">Hi, I'm</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r 
-                               from-amber-600 to-yellow-600 dark:from-amber-500 dark:to-yellow-600">
-                  Digital Excellence
+                               from-amber-500 to-yellow-600">
+                  Abdullah Chaghtai
                 </span>
               </motion.h1>
+              
+              <motion.h2 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="text-2xl md:text-3xl text-gray-400"
+              >
+                Full Stack Engineer & Technical Lead
+              </motion.h2>
               
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-                className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl"
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="text-lg text-gray-400 max-w-2xl"
               >
-                Full Stack Engineer & Technical Lead specializing in scalable applications, 
-                AI integration, and enterprise solutions. Let's build something extraordinary together.
+                Specializing in scalable applications, AI integration, and enterprise solutions. 
+                Co-founder of Bashalog, transforming businesses through technology.
               </motion.p>
             </div>
 
